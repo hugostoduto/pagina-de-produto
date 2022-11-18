@@ -1,0 +1,50 @@
+[
+  {
+    "id": 831311,
+    "name": "Sutiã Tradicional com Bojo e Aro em Renda",
+    "colection": "Brenda",
+    "video": "http://www2.duloren.com.br/p/brenda/831311/831311.mp4",
+    "new": "inline",
+    "colors": [
+      { "code": "57", "cor": "#aa7a6c" },
+      { "code": "11", "cor": "#000000" },
+      { "code": "04", "cor": "#ffffff" }
+    ],
+    "description": "Sutiã tradicional com bojo estruturado e aro, todo em delicada e exclusiva renda duloren. Suas alças finas, em elástico, são fixas e ajustáveis. Possui colchete triplo para melhor ajuste.",
+    "sizes": [42, 44, 46, 48],
+    "photos": [
+      {
+        "image": "http://www2.duloren.com.br/p/brenda/831311/831311057_057-01.jpg",
+        "id": 1
+      },
+      {
+        "image": "http://www2.duloren.com.br/p/brenda/831311/831311057_057-02.jpg",
+        "id": 2
+      }
+    ]
+  },
+  {
+    "id": 831312,
+    "name": "Calcinha",
+    "colection": "Brenda",
+    "video": "http://www2.duloren.com.br/p/brenda/831311/831311.mp4",
+    "new": "inline",
+    "colors": [
+      { "code": "57", "cor": "#aa7a6c" },
+      { "code": "11", "cor": "#000000" },
+      { "code": "04", "cor": "#ffffff" }
+    ],
+    "description": "Sutiã tradicional com bojo estruturado e aro, todo em delicada e exclusiva renda duloren. Suas alças finas, em elástico, são fixas e ajustáveis. Possui colchete triplo para melhor ajuste.",
+    "sizes": [42, 44, 46, 48],
+    "photos": [
+      {
+        "image": "http://www2.duloren.com.br/p/brenda/831311/831311057_057-01.jpg",
+        "id": 1
+      },
+      {
+        "image": "http://www2.duloren.com.br/p/brenda/831311/831311057_057-02.jpg",
+        "id": 2
+      }
+    ]
+  }
+]

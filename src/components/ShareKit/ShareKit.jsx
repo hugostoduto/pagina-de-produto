@@ -5,50 +5,57 @@ import { Heading } from "../Heading/Heading";
 import * as Styled from "./styles";
 import LogoDuloren from "./D45x45.png";
 import { MdOutlineFileDownload } from "react-icons/md";
+
 import { TextComponent } from "../TextComponent/TextComponent";
 
 export const ShareKit = ({ banner }) => {
-  function doenload2() {
+  function download1() {
     fetch(LogoDuloren).then((response) => {
       response.blob().then((blob) => {
         let url = window.URL.createObjectURL(blob);
         let a = document.createElement("a");
         a.href = url;
-        a.download = "employees.png";
+        a.download = "feed.jpg";
         a.click();
       });
       //window.location.href = response.url;
     });
   }
-  function doenload1() {
-    fetch(LogoDuloren).then((response) => {
-      response.blob().then((blob) => {
-        let url = window.URL.createObjectURL(blob);
-        let a = document.createElement("a");
-        a.href = url;
-        a.download = "employees.png";
-        a.click();
-      });
-      //window.location.href = response.url;
-    });
+  function download2() {
+    fetch("https://www2.duloren.com.br/p/brenda/831314/831314_057-01.jpg").then(
+      (response) => {
+        response.blob().then((blob) => {
+          let url = window.URL.createObjectURL(blob);
+          let a = document.createElement("a");
+          a.href = url;
+          a.download = "story.jpg";
+          a.click();
+        });
+        //window.location.href = response.url;
+      }
+    );
+  }
+  function download3() {
+    fetch("https://www2.duloren.com.br/p/brenda/831314/831314.mp4").then(
+      (response) => {
+        response.blob().then((blob) => {
+          let url = window.URL.createObjectURL(blob);
+          let a = document.createElement("a");
+          a.href = url;
+          a.download = "video.mp4";
+          a.click();
+        });
+        //window.location.href = response.url;
+      }
+    );
   }
 
-  const doenload = () => {
-    doenload2();
-    doenload1();
+  const download = () => {
+    download1();
+    download2();
+    download3();
   };
-  const links = [
-    "https://www2.duloren.com.br/p/brenda/Banner-galeria.jpg",
-    "https://www2.duloren.com.br/p/brenda/831314/831314_057-01.jpg",
-  ];
-  const varios = () => {
-    for (let index = 0; index < links.length; index++) {
-      let link = links;
-      let a = document.createElement("a");
-      a.href = link;
-      a.click();
-    }
-  };
+
   return (
     <Styled.Container id="conteudo">
       <div className="shareKit-header">
@@ -90,11 +97,7 @@ export const ShareKit = ({ banner }) => {
               </li>
             </ul>
           </div>
-          <p
-            onClick={varios}
-            download="textfile1.png"
-            className="shareKit-button"
-          >
+          <p onClick={download} className="shareKit-button">
             <MdOutlineFileDownload
               style={{ cursor: "pointer", marginRight: "10px" }}
               size={30}

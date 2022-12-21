@@ -3,10 +3,10 @@ import * as Styled from "./styles";
 
 export const Menu = ({ link = "um link" }) => {
   const links = [
-    { link: "#outros-modelos", nome: "Outros da Coleção" },
+    { link: "#outros-modelos", nome: "Outros Modelos" },
     { link: "#conteudo", nome: "Conteudo do Produto" },
     { link: "#tabela-medidas", nome: "Tabela de Medidas" },
-    { link: "https://www2.duloren.com.br/lookbook/", nome: "Outas Coleções" },
+    { link: "https://www2.duloren.com.br/lookbook/", nome: "Look Book" },
   ];
 
   return (

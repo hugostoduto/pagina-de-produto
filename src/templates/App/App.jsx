@@ -22,7 +22,6 @@ function App() {
               productReference={product.id}
             />
           </div>
-
           <ShelfDisplay banner={product.banner} product={product.products} />
           <ShareKit banner={product.banner} />
           <TableSizes />

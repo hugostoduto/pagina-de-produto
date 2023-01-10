@@ -4,13 +4,25 @@ import React from "react";
 import { Heading } from "../Heading/Heading";
 import * as Styled from "./styles";
 import LogoDuloren from "./D45x45.png";
+import story from "./content/story.jpg";
+import feed from "./content/feed.jpg";
+import video from "./content/video.mp4";
+import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 
-import { TextComponent } from "../TextComponent/TextComponent";
-
 export const ShareKit = ({ banner }) => {
-  function download1() {
-    fetch(LogoDuloren).then((response) => {
+  const handleDownload = () => {
+    fetch(story).then((response) => {
+      response.blob().then((blob) => {
+        let url = window.URL.createObjectURL(blob);
+        let a = document.createElement("a");
+        a.href = url;
+        a.download = "story/status.jpg";
+        a.click();
+      });
+      //window.location.href = response.url;
+    });
+    fetch(feed).then((response) => {
       response.blob().then((blob) => {
         let url = window.URL.createObjectURL(blob);
         let a = document.createElement("a");
@@ -20,42 +32,17 @@ export const ShareKit = ({ banner }) => {
       });
       //window.location.href = response.url;
     });
-  }
-  function download2() {
-    fetch("https://www2.duloren.com.br/p/brenda/831314/831314_057-01.jpg").then(
-      (response) => {
-        response.blob().then((blob) => {
-          let url = window.URL.createObjectURL(blob);
-          let a = document.createElement("a");
-          a.href = url;
-          a.download = "story.jpg";
-          a.click();
-        });
-        //window.location.href = response.url;
-      }
-    );
-  }
-  function download3() {
-    fetch("https://www2.duloren.com.br/p/brenda/831314/831314.mp4").then(
-      (response) => {
-        response.blob().then((blob) => {
-          let url = window.URL.createObjectURL(blob);
-          let a = document.createElement("a");
-          a.href = url;
-          a.download = "video.mp4";
-          a.click();
-        });
-        //window.location.href = response.url;
-      }
-    );
-  }
-
-  const download = () => {
-    download1();
-    download2();
-    download3();
+    fetch(video).then((response) => {
+      response.blob().then((blob) => {
+        let url = window.URL.createObjectURL(blob);
+        let a = document.createElement("a");
+        a.href = url;
+        a.download = "video.mp4";
+        a.click();
+      });
+      //window.location.href = response.url;
+    });
   };
-
   return (
     <Styled.Container id="conteudo">
       <div className="shareKit-header">
@@ -73,31 +60,20 @@ export const ShareKit = ({ banner }) => {
           <img src={banner} alt={banner} className="shareKit-img" />
         </div>
         <div className="sharekit-textContainer">
-          <div className="sharekit-text">
-            <div className="shreKit-text-header">
-              <TextComponent size="big">
-                Baixe os conteúdos relacionados a esse produto
-                <hr />
-              </TextComponent>
-            </div>
-            <ul>
-              <li>
-                <TextComponent size="medium">
-                  Imagens para redes sociais como <strong>Instagram</strong> e{" "}
-                  <strong>Facebook</strong>
-                </TextComponent>
-              </li>
-              <li>
-                <TextComponent size="medium">
-                  Página em <strong>PDF</strong> com as informações do produto
-                </TextComponent>
-              </li>
-              <li>
-                <TextComponent size="medium">Vídeo do produto</TextComponent>
-              </li>
-            </ul>
+          <Heading
+            color="gray"
+            size="medium"
+            as="h1"
+            children="Baixe os conteúdos do produto e divulque nas redes sociais."
+          />
+
+          <hr />
+          <div className="sharekit-textContainer-redes">
+            <FaWhatsapp size={30} />
+            <FaFacebook size={30} />
+            <FaInstagram size={30} />
           </div>
-          <p onClick={download} className="shareKit-button">
+          <p onClick={handleDownload} className="shareKit-button">
             <MdOutlineFileDownload
               style={{ cursor: "pointer", marginRight: "10px" }}
               size={30}

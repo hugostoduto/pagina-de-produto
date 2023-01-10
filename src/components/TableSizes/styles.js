@@ -8,7 +8,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 30px 0px;
-    background-color:${theme.seconderyBg};
+    background-color:${theme.mainBg};
 }
     * {
       /* Change your font family */

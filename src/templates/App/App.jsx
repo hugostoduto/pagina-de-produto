@@ -4,6 +4,7 @@ import ProductTitle from "../../components/ProductTitle/ProductTitle";
 import TableSizes from "../../components/TableSizes/TableSizes";
 import ShelfDisplay from "../../components/ShelfDisplay/ShelfDisplay";
 import ShareKit from "../../components/ShareKit/ShareKit";
+
 import { data } from "../../colecao-brenda";
 
 function App() {
@@ -23,8 +24,9 @@ function App() {
             />
           </div>
           <ShelfDisplay banner={product.banner} product={product.products} />
-          <ShareKit banner={product.banner} />
+
           <TableSizes />
+          <ShareKit banner={product.banner} />
         </>
       ))}
     </Styled.Container>

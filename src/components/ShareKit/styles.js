@@ -47,7 +47,7 @@ export const Container = styled.div`
       display: flex;
       align-items: center;
       flex-direction: column;
-      justify-content: center;
+      justify-content: space-evenly;
       border-radius: 20px;
       position: relative;
       margin-left: 15px;
@@ -58,31 +58,31 @@ export const Container = styled.div`
       border-radius: 20px;
       background-color: ${theme.seconderyBg};
     }
-
-    .sharekit-text {
-      height: 65%;
-      width: 90%;
-    }
-    .sharekit-text hr {
-      margin-top: 5px;
+    .sharekit-downloadContainer {
       width: 100%;
-      border-top: 3px solid #ce2680;
-    }
-    .sharekit-text h1 {
-      font-weight: 700;
-      color: #000000;
-    }
-    .sharekit-text li {
-      font-size: 1rem;
-      color: #333333;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       margin: 10px 0px;
     }
-    .sharekit-text ul {
-      width: 90%;
-      margin-left: 30px;
-      margin-top: 20px;
+    .sharekit-textContainer hr {
+      margin: 10px;
+      width: 50%;
+      border-top: 3px solid ${theme.colors.pink};
     }
-
+    .sharekit-textContainer-redes {
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+    }
+    .downloadContainer-title {
+      width: 90%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-bottom: 10px;
+    }
     .shareKit-button {
       margin-top: 10px;
       display: flex;
@@ -91,8 +91,8 @@ export const Container = styled.div`
       border-radius: 3px;
       border: none;
       padding: 0;
-      width: 80%;
-      height: 50px;
+      width: 250px;
+      height: 55px;
       background: #e23090;
       text-transform: uppercase;
       color: #fff;

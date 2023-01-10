@@ -1,7 +1,8 @@
 export const theme = {
   mainBg: "#ffffff",
-  secondBg: "##faf9fb",
-  seconderyBg: "#FdF6Fa",
+
+  secondBg: "#FdF6Fa",
+  seconderyBg: "#faf9fb",
 
   colors: {
     black: "#000000",

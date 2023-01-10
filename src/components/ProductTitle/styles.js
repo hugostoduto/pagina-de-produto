@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: center;
     .product-info hr {
       width: 100%;
+      margin: 10px 0px;
       border: 1px solid ${theme.colors.pink};
     }
     .product-info {

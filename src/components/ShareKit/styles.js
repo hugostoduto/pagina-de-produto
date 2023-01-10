@@ -8,6 +8,7 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: ${theme.seconderyBg};
 
     .shareKit-header {
       display: flex;
@@ -56,7 +57,7 @@ export const Container = styled.div`
       color: ${theme.colors.black};
       box-sizing: border-box;
       border-radius: 20px;
-      background-color: ${theme.seconderyBg};
+      background-color: ${theme.mainBg};
     }
 
     .sharekit-downloadContainer {
@@ -75,6 +76,7 @@ export const Container = styled.div`
       border-top: 3px solid ${theme.colors.pink};
     }
     .sharekit-textContainer-redes {
+      color: ${theme.colors.gray};
       display: flex;
       width: 40%;
       justify-content: space-between;

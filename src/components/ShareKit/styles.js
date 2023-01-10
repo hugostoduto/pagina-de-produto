@@ -58,8 +58,11 @@ export const Container = styled.div`
       border-radius: 20px;
       background-color: ${theme.seconderyBg};
     }
+
     .sharekit-downloadContainer {
-      width: 100%;
+      width: 90%;
+      text-align: center;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -67,7 +70,7 @@ export const Container = styled.div`
       margin: 10px 0px;
     }
     .sharekit-textContainer hr {
-      margin: 10px;
+      margin: 15px;
       width: 50%;
       border-top: 3px solid ${theme.colors.pink};
     }
@@ -84,7 +87,7 @@ export const Container = styled.div`
       margin-bottom: 10px;
     }
     .shareKit-button {
-      margin-top: 10px;
+      margin-top: 50px;
       display: flex;
       align-items: center;
       justify-content: center;

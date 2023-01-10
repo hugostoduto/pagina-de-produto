@@ -60,26 +60,28 @@ export const ShareKit = ({ banner }) => {
           <img src={banner} alt={banner} className="shareKit-img" />
         </div>
         <div className="sharekit-textContainer">
-          <Heading
-            color="gray"
-            size="medium"
-            as="h1"
-            children="Baixe os conteúdos do produto e divulque nas redes sociais."
-          />
-
-          <hr />
-          <div className="sharekit-textContainer-redes">
-            <FaWhatsapp size={30} />
-            <FaFacebook size={30} />
-            <FaInstagram size={30} />
-          </div>
-          <p onClick={handleDownload} className="shareKit-button">
-            <MdOutlineFileDownload
-              style={{ cursor: "pointer", marginRight: "10px" }}
-              size={30}
+          <div className="sharekit-downloadContainer">
+            <Heading
+              color="gray"
+              size="medium"
+              as="h1"
+              children="Representantes e lojistas, baixe os contúdos sobre o produto e divulque nas redes sociais"
             />
-            Baixar
-          </p>
+
+            <hr />
+            <div className="sharekit-textContainer-redes">
+              <FaWhatsapp size={30} />
+              <FaFacebook size={30} />
+              <FaInstagram size={30} />
+            </div>
+            <p onClick={handleDownload} className="shareKit-button">
+              <MdOutlineFileDownload
+                style={{ cursor: "pointer", marginRight: "10px" }}
+                size={30}
+              />
+              Baixar
+            </p>
+          </div>
         </div>
       </div>
     </Styled.Container>
@@ -90,14 +92,3 @@ ShareKit.propTypes = {
   banner: P.string.isRequired,
 };
 export default ShareKit;
-/*    const url =
-    "https://www2.duloren.com.br/p/performance/814005/814005_077-01.jpg";
-
-    const url = [LogoDuloren];
-    const blob = new Blob(url, { type: "image/png" });
-    const hrf = URL.createObjectURL(blob);
-     const handleDownload = (e) => {
-      for (let i = 0; i < .length; i++) {
-        console.log();
-      }
-    }; */

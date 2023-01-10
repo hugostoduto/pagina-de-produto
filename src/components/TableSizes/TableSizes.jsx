@@ -11,7 +11,7 @@ export const TableSizes = ({ children }) => {
         <img className="table-d" src={LogoDuloren} alt="Logo Duloren" /> <hr />
         <Heading
           color="gray"
-          children="Guia de Medidas"
+          children="Tabela de Medidas"
           as="h1"
           size="medium"
         />

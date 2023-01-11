@@ -9,12 +9,7 @@ export const TableSizes = ({ children }) => {
     <Styled.Container>
       <div id="tabela-medidas" className="table-header">
         <img className="table-d" src={LogoDuloren} alt="Logo Duloren" /> <hr />
-        <Heading
-          color="gray"
-          children="Tabela de Medidas"
-          as="h1"
-          size="medium"
-        />
+        <Heading color="gray" children="Tabela de Medidas" as="h1" size="big" />
       </div>
       <div className="table-size-container">
         {/*  <div className="table-banner">

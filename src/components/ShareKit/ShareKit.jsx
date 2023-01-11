@@ -52,7 +52,7 @@ export const ShareKit = ({ banner }) => {
           color="gray"
           children="Conteúdos Sobre o Produto"
           as="h1"
-          size="medium"
+          size="big"
         />
       </div>
       <div className="sharekit-contaier">

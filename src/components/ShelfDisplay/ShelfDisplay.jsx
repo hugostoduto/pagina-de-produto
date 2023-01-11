@@ -33,7 +33,7 @@ export const ShelfDisplay = ({ product, banner }) => {
           color="gray"
           children="Outros Produtos da Coleção"
           as="h1"
-          size="medium"
+          size="big"
         />
       </div>
 

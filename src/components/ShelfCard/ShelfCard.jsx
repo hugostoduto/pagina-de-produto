@@ -12,7 +12,7 @@ export const ShelfCard = ({
     <Styled.Container background={d}>
       <div className="shelf-card-conatainer">
         <div key={productReference} className="shelf-card">
-          <div className="d"></div>
+          {/* <div className="d"></div> */}
           <img src={productImage} alt={productImage} />
 
           <div className="shelf-description">

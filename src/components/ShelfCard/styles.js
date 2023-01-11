@@ -6,8 +6,8 @@ export const Container = styled.div`
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
-      height: 420px;
+      justify-content: center;
+      height: 450px;
       width: 270px;
       -webkit-box-shadow: 0px 6px 21px 1px rgba(0, 0, 0, 0.096);
       box-shadow: 0px 0px 21px 1px rgba(0, 0, 0, 0.096);
@@ -32,9 +32,10 @@ export const Container = styled.div`
     }
     .shelf-card img {
       border-radius: 10px;
-      width: 80%;
-      height: 220px;
+      width: 90%;
+      height: 280px;
       object-fit: cover;
+      margin-bottom: 20px;
     }
     .shelf-description {
       border-radius: 10px;

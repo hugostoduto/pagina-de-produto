@@ -3,19 +3,19 @@ import * as Styled from "./styles";
 
 export const Menu = ({ link = "um link" }) => {
   const links = [
-    { link: "#outros-modelos", nome: "Outros Modelos" },
-    { link: "#conteudo", nome: "Conteudo do Produto" },
-    { link: "#tabela-medidas", nome: "Tabela de Medidas" },
-    { link: "https://www2.duloren.com.br/lookbook/", nome: "Look Book" },
+    { link: "#outros-modelos", name: "Outros Modelos" },
+    { link: "#tabela-medidas", name: "Tabela de Medidas" },
+    { link: "https://www2.duloren.com.br/lookbook/", name: "Look Book" },
+    { link: "#conteudo", name: "Compartilhe" },
   ];
 
   return (
     <Styled.Container>
       <div className="menu-container">
         {links.map((link) => (
-          <div key={link.nome} className="menu-button">
+          <div key={link.name} className="menu-button">
             <a target="" href={link.link} rel="noreferrer">
-              {link.nome}
+              {link.name}
             </a>
           </div>
         ))}

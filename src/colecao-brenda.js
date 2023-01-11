@@ -4,14 +4,12 @@ export const data = [
     name: "Sutiã de Bojo Duplo Cobertura Total",
     colection: "Brenda",
     slug: "brenda",
-    new: "inline",
+    new: "none",
     banner: "http://www2.duloren.com.br/p/brenda/Banner-galeria.jpg",
     colors: [
       { code: "Argile Rose | 57", cor: "#aa7a6c", fontColor: "#ffffff" },
       { code: "Preto | 11", cor: "#000000", fontColor: "#ffffff" },
       { code: "Branco | 04", cor: "#ffffff", fontColor: "#000000" },
-      { code: "Cereja | 91", cor: "#8d1c38", fontColor: "#ffffff" },
-      { code: "Amarilo | 61", cor: "#f9f3b7", fontColor: "#000000" },
     ],
     description:
       "Sutiã todo confeccionado em renda floral. Bojo forrado com tecido de toque macio, com aro e cobertura total. Garantindo beleza, conforto e sustentação. Alças em elástico, fixas e com regulagem para ajustes. Colchete triplo para ajuste ideal a circunferência do corpo. Veste plus size.onal com bojo estruturado e aro, todo em delicada e exclusiva renda duloren. Suas alças finas, em elástico, são fixas e ajustáveis. Possui colchete triplo para melhor ajuste.",

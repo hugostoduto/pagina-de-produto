@@ -6,7 +6,7 @@ import { CgMenuLeftAlt } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
 export const MenuMobile = ({ links }) => {
   const link = [
-    { link: "#outros-modelos", nome: "Outros Modelos" },
+    { link: "#outros-modelos", nome: "Outros Coleção" },
     { link: "#conteudo", nome: "Compartilhe" },
     { link: "#tabela-medidas", nome: "Tabela de Medidas" },
     { link: "https://www2.duloren.com.br/lookbook/", nome: "Look Book" },
@@ -29,11 +29,15 @@ export const MenuMobile = ({ links }) => {
           cursor="pointer"
         />
         {link.map((link) => (
-          <div key={link.nome} className="menu-mobile-button">
-            <a target="" href={link.link} rel="noreferrer">
-              {link.nome}
-            </a>
-          </div>
+          <a
+            key={link.nome}
+            target=""
+            className="menu-mobile-button"
+            href={link.link}
+            rel="noreferrer"
+          >
+            {link.nome}
+          </a>
         ))}
       </div>
     </Styled.MenuMobile>

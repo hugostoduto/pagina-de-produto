@@ -73,8 +73,7 @@ export const MenuMobile = styled.div`
       background-color: ${theme.colors.pink};
       margin: 10px 0px;
       border-radius: 20px;
-    }
-    .menu-mobile-button a {
+      color: ${theme.colors.white};
       font-size: ${theme.font.sizes.small};
       text-decoration: none;
       color: ${theme.colors.white};
@@ -82,7 +81,6 @@ export const MenuMobile = styled.div`
       box-sizing: border-box;
       position: relative;
     }
-
     .open-button {
       margin: 20px 0px;
       padding: 10px;

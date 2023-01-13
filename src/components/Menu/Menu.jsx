@@ -5,8 +5,8 @@ export const Menu = ({ link = "um link" }) => {
   const links = [
     { link: "#outros-modelos", name: "Outros Modelos" },
     { link: "#tabela-medidas", name: "Tabela de Medidas" },
-    { link: "https://www2.duloren.com.br/lookbook/", name: "Look Book" },
     { link: "#conteudo", name: "Compartilhe" },
+    { link: "https://www2.duloren.com.br/lookbook/", name: "Look Book" },
   ];
 
   return (

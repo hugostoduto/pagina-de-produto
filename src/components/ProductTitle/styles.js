@@ -39,7 +39,7 @@ export const Container = styled.div`
     .product-colors,
     .product-sizes {
       box-sizing: border-box;
-      margin: 20px 0px;
+      margin: 10px 0px;
       display: flex;
       flex-direction: column;
       width: 560px;
@@ -59,14 +59,14 @@ export const Container = styled.div`
       font-size: ${theme.font.sizes.small};
       align-items: center;
       justify-content: center;
-      color: #ffffff;
-      background-color: #1d1d1d;
+      font-weight: 700;
+      color: ${theme.colors.gray};
       border: solid 2px #c0c0c0;
       text-transform: uppercase;
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       border-radius: 100%;
-      margin: 0px 5px;
+      margin: 5px 5px;
     }
     .color {
       border: solid 1px #000000;
@@ -75,7 +75,7 @@ export const Container = styled.div`
       color: #ffffff;
       border-radius: 10px;
       margin: 5px 5px;
-      padding: 2px 8px;
+      padding: 5px 10px;
     }
 
     .mobile-description {

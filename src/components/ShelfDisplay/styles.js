@@ -53,6 +53,16 @@ export const Container = styled.div`
       .shelf-slider-container {
         display: none;
       }
+      .shelf-display-header {
+        
+        text-align: center;
+        flex-direction:column;
+      }
+      .shelf-display-header hr {
+        height: 0px;
+        margin: 10px 0px;
+        width: 30px;
+      }
     }
     @media ${theme.media.xsmall}{
       width: 100%;

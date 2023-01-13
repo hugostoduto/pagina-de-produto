@@ -95,6 +95,16 @@ export const Container = styled.div`
       .table-size-container{
         scale: 0.9;
       }
+      .table-header {
+        flex-direction: column;
+
+        text-align: center;
+      }
+      .table-header hr {
+        height: 0px;
+        margin: 10px 0px;
+        width: 30px;
+      }
     }
     @media ${theme.media.xsmall}{
       .table-size-container{

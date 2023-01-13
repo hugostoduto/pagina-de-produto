@@ -4,9 +4,9 @@ import React from "react";
 import { Heading } from "../Heading/Heading";
 import * as Styled from "./styles";
 import LogoDuloren from "./D45x45.png";
-import story from "./content/story.jpg";
-import feed from "./content/feed.jpg";
-import video from "./content/video.mp4";
+import story from "./story.jpg";
+import feed from "./feed.jpg";
+import video from "./video.mp4";
 import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 

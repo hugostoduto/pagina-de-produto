@@ -6,10 +6,10 @@ import { CgMenuLeftAlt } from "react-icons/cg";
 import { AiOutlineClose } from "react-icons/ai";
 export const MenuMobile = ({ links }) => {
   const link = [
-    { link: "#outros-modelos", nome: "Modelos da Coleção" },
-    { link: "#conteudo", nome: "Conteudo do Produto" },
+    { link: "#outros-modelos", nome: "Outros Modelos" },
+    { link: "#conteudo", nome: "Compartilhe" },
     { link: "#tabela-medidas", nome: "Tabela de Medidas" },
-    { link: "https://www2.duloren.com.br/lookbook/", nome: "Outas Coleções" },
+    { link: "https://www2.duloren.com.br/lookbook/", nome: "Look Book" },
   ];
   const [open, setOpen] = useState("close");
   const handleMenu = () => setOpen(open === "close" ? "open" : "close");

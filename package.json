@@ -1,6 +1,7 @@
 {
   "name": "pagina-de-produto",
   "version": "0.1.0",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.2.0",

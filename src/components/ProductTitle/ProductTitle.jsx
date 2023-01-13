@@ -75,7 +75,7 @@ export const ProductTitle = ({
         </div>
 
         <div className="product-colors">
-          <h3>cores:</h3>
+          <h4>Cores:</h4>
           <div className="colors">
             {productColors.map((color) => {
               return (
@@ -94,7 +94,7 @@ export const ProductTitle = ({
           </div>
         </div>
         <div className="product-sizes">
-          <h3>Tamanhos:</h3>
+          <h4>Tamanhos:</h4>
           <div className="sizes">
             {productSizes.map((size) => {
               return (

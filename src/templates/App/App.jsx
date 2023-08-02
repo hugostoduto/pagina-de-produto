@@ -5,7 +5,7 @@ import TableSizes from "../../components/TableSizes/TableSizes";
 import ShelfDisplay from "../../components/ShelfDisplay/ShelfDisplay";
 import ShareKit from "../../components/ShareKit/ShareKit";
 
-import { data } from "../../colecao-brenda";
+import { data } from "../../colecao";
 
 function App() {
   return (
